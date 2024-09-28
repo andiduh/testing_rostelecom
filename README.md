@@ -35,7 +35,7 @@ https://desktop.github.com/download/
 
 
 3. Откройте созданную папку при клонировни в терминале:
-screen
+![Screen2](https://github.com/user-attachments/assets/d8db7103-f335-4c82-9d44-14e46b4b7721)
 
 4. Создайте и активируйте виртуальное окружение:
 ```bash
@@ -47,6 +47,7 @@ source venv/bin/activate
 ```bash 
 pytest
 ```
+
 
 ___
 ## Технологии
