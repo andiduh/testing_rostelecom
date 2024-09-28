@@ -27,17 +27,21 @@ pytest
 ```
 
 ### Windows
+1. Установите ![Python 3.12.4](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe):
+[https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe)   
+![Screen3](https://github.com/user-attachments/assets/c0e9fc49-9bc0-468d-8d7b-59c44aa1461f)
+
 1. Установите GitHub Desktop:
 https://desktop.github.com/download/
 
-2. Откройте GitHub Desktop и клонируйте репозиторий:
+3. Откройте GitHub Desktop и клонируйте репозиторий:
 ![Screen1](https://github.com/user-attachments/assets/0969895d-6003-4be7-aad3-4800353e6ab6)
 
 
-3. Откройте созданную папку при клонировни в терминале:
+4. Откройте созданную папку при клонировни в терминале:
 ![Screen2](https://github.com/user-attachments/assets/d8db7103-f335-4c82-9d44-14e46b4b7721)
 
-4. Создайте и активируйте виртуальное окружение:
+5. Создайте и активируйте виртуальное окружение:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
