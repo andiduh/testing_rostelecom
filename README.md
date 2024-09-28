@@ -60,6 +60,7 @@ pip install -r requirements.txt
 ![image](https://github.com/user-attachments/assets/1ffc6d06-6a99-4a5a-b013-88524f447d2f)
 
 Далее с активированным виртуальным окружением нужно запустить pytest с указанием пути до этого драйвера:
+
 Активация виртуального окружения:
 ```bash
 venv/Scripts/activate.ps1
