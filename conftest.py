@@ -22,11 +22,12 @@ URL_Onlime_WEB = ('https://my.rt.ru/')
 URL_Start_WEB = ('https://start.rt.ru/')
 URL_Umny_dom_WEB = ('https://lk.smarthome.rt.ru/')
 URL_Kluch_WEB = ('https://key.rt.ru/')
-
+default_chrome_driver_path = ('C:\chromedriver-win64\chromedriver.exe')
 
 
 def driver(request):
-    chrome_driver_path = request.config.getoption("--driver-path")
+    driver_path = request.config.getoption("--driver-path")
+    chrome_driver_path = driver_path if driver_path else default_chrome_driver_path
     service = Service(chrome_driver_path)  # Путь к chromedriver
     options = Options()
     options.add_argument('--start-maximized')  # Открывать браузер в максимизированном состоянии
