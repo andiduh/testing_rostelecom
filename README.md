@@ -26,7 +26,7 @@ pip install -r requirements.txt
 pytest
 ```
 
-### Windows~~
+### Windows
 1. Установите GitHub Desktop:
 https://desktop.github.com/download/
 
