@@ -61,20 +61,33 @@ pip install -r requirements.txt
 
 Далее с активированным виртуальным окружением нужно запустить pytest с указанием пути до этого драйвера:
 
-Активация виртуального окружения:
+Активация виртуального окружения (Windows):
 ```bash
 venv/Scripts/activate.ps1
 ```
 
-Запуска pytest:
+Активация виртуального окружения (Linux):
+```bash
+venv/Scripts/activate.ps1
+```
+
+Запуск pytest:
 ```bash
 pytest
 ```
 
-Папка с драйвером по умолчанию: C:\chromedriver-win64\chromedriver.exe. Если будет другая, то pytest нужно запустить с указанием пути до `chromedriver.exe`
+Папка с драйвером по умолчанию в windows: `C:\chromedriver-win64\chromedriver.exe`, в linux `~/chromedriver`. Если будет другая, то pytest нужно запустить с указанием пути до `chromedriver.exe`.
+
+Windows
 ```bash
-pytest 'C:\path\to\chrome\driver\chromedriver.exe'
+pytest --driver-path 'C:\path\to\chrome\driver\chromedriver.exe'
 ```
+
+Linux
+```bash
+pytest --driver-path '~/path/to/chromedriver'
+```
+
 ## Технологии
 
 - ![Python](https://img.shields.io/badge/python-3.12.4-purple)
