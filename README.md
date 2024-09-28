@@ -1,6 +1,5 @@
 # Тесты для авторизации, регистрации и восстановления пароля в Ростелеком.
 
-___
 ## Установка
 
 ### Linux
@@ -61,8 +60,6 @@ pip install -r requirements.txt
 pytest
 ```
 
-
-___
 ## Технологии
 
 - ![Python](https://img.shields.io/badge/python-3.12.4-purple)
