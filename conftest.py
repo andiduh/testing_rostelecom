@@ -41,13 +41,13 @@ def pytest_addoption(parser):
 
 
 @pytest.fixture(scope="module")
-def driver_module():
-    yield from driver()
+def driver_module(request):
+    yield from driver(request)
 
 
 @pytest.fixture(scope="function")
-def driver_function():
-    yield from driver()
+def driver_function(request):
+    yield from driver(request)
 
 
 @pytest.fixture(scope="module")
