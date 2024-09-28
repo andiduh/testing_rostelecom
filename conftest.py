@@ -25,13 +25,18 @@ URL_Kluch_WEB = ('https://key.rt.ru/')
 
 
 
-def driver():
-    service = Service('C:\\chromedriver-win64\\chromedriver.exe')  # Путь к chromedriver
+def driver(request):
+    chrome_driver_path = request.config.getoption("--driver-path")
+    service = Service(chrome_driver_path)  # Путь к chromedriver
     options = Options()
     options.add_argument('--start-maximized')  # Открывать браузер в максимизированном состоянии
     driver = webdriver.Chrome(service=service, options=options)  # Инициализация WebDriver
     yield driver  # Возвращение объекта драйвера
     driver.quit()  # После завершения тестов закрывается браузер
+
+
+def pytest_addoption(parser):
+    parser.addoption("--driver-path", action="store", help="Path to ChromeDriver executable")
 
 
 @pytest.fixture(scope="module")
