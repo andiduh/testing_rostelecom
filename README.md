@@ -47,7 +47,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 6. Создайте и активируйте виртуальное окружение:
 ```bash
 py -m venv venv
-source venv/bin/activate
+venv/Scripts/activate.ps1
 ```
 
 7. Установите библиотеки для работы программы:
