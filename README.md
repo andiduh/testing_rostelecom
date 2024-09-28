@@ -1,7 +1,9 @@
 # Тесты для авторизации, регистрации и восстановления пароля в Ростелеком.
 
-## Установка
+## Важно !
+ - Проверьте что бы все пути до файлов не содержали кириллицу
 
+## Установка
 ### Linux
 1. Склонируйте репозиторий и перейдите в него:
 ```bash
@@ -20,11 +22,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Запустите тесты:
-```bash
-pytest
-```
-
 ### Windows
 1. Установите [Python 3.12.4](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe).
 Обязательно поставьте галочку около поля "Add python.exe to PATH" и нажмите "Install Now":
@@ -39,7 +36,7 @@ https://desktop.github.com/download/
 4. Откройте созданную папку при клонировни в терминале:
 ![Screen2](https://github.com/user-attachments/assets/d8db7103-f335-4c82-9d44-14e46b4b7721)
 
-5. Выполните команду для разрешения запуска скриптов (для активации виртуального окружения):
+5. Выполните команду для разрешения политики запуска скриптов (для активации виртуального окружения):
 ```bash
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 ```
@@ -55,9 +52,12 @@ venv/Scripts/activate.ps1
 pip install -r requirements.txt
 ```
 
-8. Запустите тесты:
-```bash 
-pytest
+## Запуск тестов с активированным виртуальным окружением
+Поскольку тесты запускаются c использованием библиотеки selenium, то необходимо скачать и разархивировать в отдельную папку chromedriver
+
+Активация виртуального окружения:
+```bash
+venv/Scripts/activate.ps1
 ```
 
 ## Технологии
