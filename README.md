@@ -50,6 +50,6 @@ pytest
 ___
 ## Технологии
 
-https://img.shields.io/badge/python-3.12.4-white
-https://img.shields.io/badge/pytest-8.3.3-green
-https://img.shields.io/badge/selenium-4.25.0-blue
+![Python](https://img.shields.io/badge/python-3.12.4-white)
+[Pytest](https://img.shields.io/badge/pytest-8.3.3-green)
+[Selenium](https://img.shields.io/badge/selenium-4.25.0-blue)
