@@ -53,23 +53,27 @@ pip install -r requirements.txt
 ```
 
 ## Запуск тестов с активированным виртуальным окружением
-Поскольку тесты запускаются c использованием библиотеки selenium, то необходимо скачать и разархивировать в отдельную папку [chromedriver](https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win64/chromedriver-win64.zip).
+Поскольку тесты запускаются c использованием библиотеки selenium, то необходимо скачать и разархивировать в отдельную папку сhromedriver:
+- [Windows (64 bit)](https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win64/chromedriver-win64.zip)
+- [Windows (32 bit)](https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win32/chromedriver-win32.zip)
 
 ![image](https://github.com/user-attachments/assets/1ffc6d06-6a99-4a5a-b013-88524f447d2f)
 
 Далее с активированным виртуальным окружением нужно запустить pytest с указанием пути до этого драйвера:
 Активация виртуального окружения:
 ```bash
-source venv/bin/activate
-или
 venv/Scripts/activate.ps1
 ```
 
 Запуска pytest:
 ```bash
-pytest 'C:\chromedriver-win64\chromedriver.exe'
+pytest
 ```
 
+Папка с драйвером по умолчанию: C:\chromedriver-win64\chromedriver.exe. Если будет другая, то pytest нужно запустить с указанием пути до `chromedriver.exe`
+```bash
+pytest 'C:\path\to\chrome\driver\chromedriver.exe'
+```
 ## Технологии
 
 - ![Python](https://img.shields.io/badge/python-3.12.4-purple)
