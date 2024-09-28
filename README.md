@@ -27,8 +27,8 @@ pytest
 ```
 
 ### Windows
-1. Установите ![Python 3.12.4](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe):
-[https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe)   
+1. Установите [Python 3.12.4](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe).
+Обязательно поставьте галочку около поля "Add python.exe to PATH" и нажмите "Install Now":
 ![Screen3](https://github.com/user-attachments/assets/c0e9fc49-9bc0-468d-8d7b-59c44aa1461f)
 
 1. Установите GitHub Desktop:
