@@ -31,7 +31,8 @@ pytest
 https://desktop.github.com/download/
 
 2. Откройте GitHub Desktop и клонируйте репозиторий:
-screen
+![Screen1](https://github.com/user-attachments/assets/0969895d-6003-4be7-aad3-4800353e6ab6)
+
 
 3. Откройте созданную папку при клонировни в терминале:
 screen
