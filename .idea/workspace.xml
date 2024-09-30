@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a1c9b7a-2af2-4ac3-9d34-9e24f31a887e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2mT18aP68K3gyLnaGJDwAjE3VFy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for 1.test_open_page_and_tabs.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for 3.test_tab_displayed.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for Autorization_tests.test_correct_authorization_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_tests.test_correct_authorization_with_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_tests.test_correct_authorization_with_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_tests.test_incorrect_authorization_with_number_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_authorization_with_code_and_change_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_authorization_with_code_and_change_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_authorization_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_authorization_with_email_for_new_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_authorization_with_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_authorization_with_resend_code_and_correct_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_correct_authorization_with_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_element_displayed_autorization_with_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_incorrect_authorization_with_code_and_incorrect_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_incorrect_authorization_with_wrong_code_and_correct_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_incorrect_authorization_with_wrong_code_and_correct_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_code_tests.test_tab_displayed_autorization_with_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_password_tests.test_active_tab_autorization_with_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_password_tests.test_correct_authorization_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_password_tests.test_correct_authorization_with_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_password_tests.test_incorrect_authorization_with_number_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_password_tests.test_input_and_tab_switching_autorization_with_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Autorization_with_password_tests.test_tab_displayed_autorization_with_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_error_recovery_password_with_email_and_incorrect_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_error_recovery_password_with_email_and_timeout_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_error_recovery_password_with_email_and_wrong_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_error_recovery_password_witn_phone_and_timeout_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_form_of_recovery_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_recovery_password_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_recovery_password_with_email_and_resend_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_recovery_password_with_email_and_reset_cancel.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_recovery_password_with_phone_and_resend_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Password_recovery_tests.test_recovery_password_with_phone_and_reset_cancel.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_ELK_WEB_autorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_ELK_WEB_autorization_with_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_ELK_WEB_recovery_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_ELK_WEB_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Kluch_WEB_autorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Kluch_WEB_recovery_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Kluch_WEB_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Onlime_WEB_autorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Onlime_WEB_recovery_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Start_WEB_autorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Start_WEB_recovery_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Start_WEB_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Umny_dom_WEB_autorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Umny_dom_WEB_recovery_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_Umny_dom_WEB_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Products_form_tests.test_form_of_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_button_click_and_navigation1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_error_of_registration_with_incorrect_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_error_of_registration_with_incorrect_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_error_of_registration_with_incorrect_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_error_of_registration_with_incorrect_password_confirm.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_error_of_registration_with_incorrect_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_error_of_registration_with_incorrect_surname.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_form_of_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_error_with_email_and_incorrect_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_error_with_email_and_timeout_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_error_with_phone_and_incorrect_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_error_with_phone_and_timeout_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_with_changed_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_with_changed_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_with_email_and_resend_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_with_phone_and_resend_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_with_used_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Registration_tests.test_registration_with_used_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK1.test_tab_displayed.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK2.test_tk2_correct_authorization_with_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK2.test_tk3_incorrect_authorization_with_number_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK2.test_tk4_incorrect_authorization_with_incorrect_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK2.test_tk5_correct_authorization_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK2.test_tk6_incorrect_authorization_with_email_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK2.test_tk7_incorrect_authorization_with_incorrect_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK27.test_button_click_and_navigation.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TK27.test_button_click_and_navigation1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_code_test.test_element_displayed_autorization_with_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_code_test.test_incorrect_authorization_with_code_and_incorrect_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_code_test.test_incorrect_authorization_with_code_and_incorrect_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_code_test.test_incorrect_authorization_with_wrong_code_and_correct_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_code_test.test_incorrect_authorization_with_wrong_code_and_correct_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_active_tab_autorization_with_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_correct_authorization_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_correct_authorization_with_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_correct_authorization_with_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_incorrect_authorization_with_email_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_incorrect_authorization_with_incorrect_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_incorrect_authorization_with_incorrect_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_incorrect_authorization_with_login_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_incorrect_authorization_with_number_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_input_and_tab_switching_autorization_with_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for autorization_with_password_test.test_tab_displayed_autorization_with_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for cookie_test.test_cookie.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for password_recovery_test.test_error_recovery_password_with_phone_and_repeat_pwd.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for password_recovery_test.test_error_recovery_password_with_phone_and_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for password_recovery_test.test_recovery_password_with_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for password_recovery_test.test_recovery_password_with_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_error_of_registration_with_incorrect_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_error_of_registration_with_incorrect_surname.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_form_of_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_registration_error_with_email_and_timeout_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_registration_error_with_phone_and_incorrect_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_registration_with_changed_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_registration_with_email_and_resend_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_registration_with_used_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for registration_test.test_registration_with_used_phone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in 1.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in 2.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in 3.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in 4.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in 5.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Autorization_tests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Products_form_tests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in TK1.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in TK14.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in TK2.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in TK27.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Test 3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/diduh/PycharmProjects/testing_rostelecom&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python tests.Python tests for password_recovery_test.test_recovery_password_with_email">
+    <configuration name="Python tests for cookie_test.test_cookie" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_Rostelekom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;cookie_test.test_cookie&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for password_recovery_test.test_error_recovery_password_with_phone_and_repeat_pwd" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_Rostelekom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;password_recovery_test.test_error_recovery_password_with_phone_and_repeat_pwd&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for password_recovery_test.test_error_recovery_password_with_phone_and_wrong_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_Rostelekom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;password_recovery_test.test_error_recovery_password_with_phone_and_wrong_password&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for password_recovery_test.test_recovery_password_with_email" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_Rostelekom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;password_recovery_test.test_recovery_password_with_email&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for password_recovery_test.test_recovery_password_with_phone" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_Rostelekom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;password_recovery_test.test_recovery_password_with_phone&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for password_recovery_test.test_recovery_password_with_email" />
+        <item itemvalue="Python tests.Python tests for password_recovery_test.test_error_recovery_password_with_phone_and_repeat_pwd" />
+        <item itemvalue="Python tests.Python tests for password_recovery_test.test_error_recovery_password_with_phone_and_wrong_password" />
+        <item itemvalue="Python tests.Python tests for password_recovery_test.test_recovery_password_with_phone" />
+        <item itemvalue="Python tests.Python tests for cookie_test.test_cookie" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a1c9b7a-2af2-4ac3-9d34-9e24f31a887e" name="Changes" comment="" />
+      <created>1727085594195</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727085594195</updated>
+    </task>
+    <servers />
+  </component>
+</project>
