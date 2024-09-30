@@ -76,6 +76,8 @@ def test_incorrect_authorization_with_code_and_incorrect_phone(driver_module, pa
     page_waiter_module.until(expected_conditions.presence_of_element_located
                              ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
     phone_input = driver_module.find_element(By.ID, value="address")  # Ввод Некорректного номера телефона в поле
+    phone_input.click()
+    driver_module.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('79865')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
     login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
@@ -126,8 +128,10 @@ def test_incorrect_authorization_with_code_and_incorrect_phone(driver_module, pa
 def test_incorrect_authorization_with_code_and_incorrect_email(driver_module, page_waiter_module):
     page_waiter_module.until(expected_conditions.presence_of_element_located
                              ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
-    phone_input = driver_module.find_element(By.ID, value="address")  # Ввод НЕкорректной почты в поле
-    phone_input.send_keys('@gmail.com')
+    address_input = driver_module.find_element(By.ID, value="address")  # Ввод НЕкорректной почты в поле
+    address_input.click()
+    driver_module.execute_script("arguments[0].value = '';", address_input)
+    address_input.send_keys('@gmail.com')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
     login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
     login_button.click()
@@ -220,6 +224,8 @@ def test_incorrect_authorization_with_wrong_code_and_correct_phone(driver_module
     page_waiter_module.until(expected_conditions.presence_of_element_located
                              ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
     phone_input = driver_module.find_element(By.ID, value="address")  # Ввод номера телефона в поле
+    phone_input.click()
+    driver_module.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('+79865451111')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
     login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
@@ -250,6 +256,8 @@ def test_authorization_with_resend_code_and_correct_phone(driver_module, page_wa
     page_waiter_module.until(expected_conditions.presence_of_element_located
                              ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
     phone_input = driver_module.find_element(By.ID, value="address")  # Ввод номера телефона в поле
+    phone_input.click()
+    driver_module.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('+79123123137')
     # time.sleep(15) # Сделать строку активной для заполнения капчи вручную
     login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
@@ -279,6 +287,8 @@ def test_incorrect_authorization_with_wrong_code_and_correct_email(driver_module
     page_waiter_module.until(expected_conditions.presence_of_element_located
                              ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
     phone_input = driver_module.find_element(By.ID, value="address")  # Ввод почты в поле
+    phone_input.click()
+    driver_module.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('test111@gmail.com')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
     login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
@@ -309,6 +319,8 @@ def test_authorization_with_resend_code_and_correct_email(driver_module, page_wa
     page_waiter_module.until(expected_conditions.presence_of_element_located
                              ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
     phone_input = driver_module.find_element(By.ID, value="address")  # Ввод почты в поле
+    phone_input.click()
+    driver_module.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('testovy@gmail.com')
     time.sleep(15)  # Сделать строку активной для заполнения капчи вручную
     login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код

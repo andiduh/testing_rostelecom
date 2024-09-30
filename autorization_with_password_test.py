@@ -136,7 +136,7 @@ def test_correct_authorization_with_number(driver_module, page_waiter_module):
     # Постусловие: выход из ЛК
     logout_button = driver_module.find_element(By.ID, "logout-btn")  # Нажатие кнопки Выйти
     logout_button.click()
-    time.sleep(5)
+    driver_module.refresh()  # Обновление страницы
 
 
 # ТК3 Ошибка при авторизации клиента по Номеру телефона при вводе НЕкорректной связки Номер+Пароль
