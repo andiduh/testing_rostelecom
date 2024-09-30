@@ -24,23 +24,22 @@ URL_Umny_dom_WEB = 'https://lk.smarthome.rt.ru/'
 URL_Kluch_WEB = 'https://key.rt.ru/'
 
 # Путь к файлу chromedriver.exe по умолчанию
-default_chrome_driver_path = ('C:\chromedriver-win64\chromedriver.exe')
+# default_chrome_driver_path = ('C:\chromedriver-win64\chromedriver.exe')
 
 
 def driver(request):
     # Получаем путь к chromedriver, переданный через параметр --driver-path при запуске тестов
     driver_path = request.config.getoption("--driver-path")
     # Если путь к chromedriver был передан, используем его, иначе используем путь по умолчанию
-    chrome_driver_path = driver_path if driver_path else default_chrome_driver_path
     # Создаем объект Service, который управляет процессом chromedriver
     # Передаем путь к исполняемому файлу chromedriver
-    service = Service(chrome_driver_path)
+    service = Service(driver_path) if driver_path else None
     # Создаем объект Options для настройки параметров запуска браузера Chrome.
     options = Options()
     # Добавляем опцию, чтобы браузер открывался в максимизированном окне
     options.add_argument('--start-maximized')
     # Инициализируем WebDriver с переданной службой Service и параметрами Options
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(service=service, options=options) if service else webdriver.Chrome(options=options)
     yield driver
     # После завершения тестов, закрываем браузер и завершаем процесс chromedriver
     driver.quit()
