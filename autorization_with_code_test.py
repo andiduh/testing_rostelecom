@@ -71,21 +71,22 @@ def test_element_displayed_autorization_with_code(driver_module, page_waiter_mod
 # ТК16 - Ошибка при авторизации клиента по Временному коду с помощью Номера телефона, введенного НЕкорректно
 
 
-@pytest.mark.parametrize("page_waiter_module", [URL_autorization_with_code], indirect=True)
-def test_incorrect_authorization_with_code_and_incorrect_phone(driver_module, page_waiter_module):
-    page_waiter_module.until(expected_conditions.presence_of_element_located
-                             ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
-    phone_input = driver_module.find_element(By.ID, value="address")  # Ввод Некорректного номера телефона в поле
+@pytest.mark.parametrize("page_waiter_function", [URL_autorization_with_code], indirect=True)
+def test_incorrect_authorization_with_code_and_incorrect_phone(driver_function, page_waiter_function):
+    page_waiter_function.until(expected_conditions.presence_of_element_located
+                               ((By.XPATH, f"//h1[contains(@class, 'card-container') "
+                                           f"and text()='Авторизация по коду']")))
+    phone_input = driver_function.find_element(By.ID, value="address")  # Ввод Некорректного номера телефона в поле
     phone_input.click()
-    driver_module.execute_script("arguments[0].value = '';", phone_input)
+    driver_function.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('79865')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
-    login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
+    login_button = driver_function.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
     login_button.click()
     time.sleep(5)
     # Появление ошибки
     try:
-        error_message = page_waiter_module.until(
+        error_message = page_waiter_function.until(
             expected_conditions.presence_of_element_located(
                 (By.XPATH, f"//span[contains(@class, 'rt-input-container__meta--error') and "
                            f"text()='Введите телефон в формате +7ХХХХХХХХХХ или "
@@ -124,21 +125,22 @@ def test_incorrect_authorization_with_code_and_incorrect_phone(driver_module, pa
 # ТК18 - Ошибка при авторизации клиента по Временному коду с помощью Почты, введенной НЕкорректно
 
 
-@pytest.mark.parametrize("page_waiter_module", [URL_autorization_with_code], indirect=True)
-def test_incorrect_authorization_with_code_and_incorrect_email(driver_module, page_waiter_module):
-    page_waiter_module.until(expected_conditions.presence_of_element_located
-                             ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
-    address_input = driver_module.find_element(By.ID, value="address")  # Ввод НЕкорректной почты в поле
+@pytest.mark.parametrize("page_waiter_function", [URL_autorization_with_code], indirect=True)
+def test_incorrect_authorization_with_code_and_incorrect_email(driver_function, page_waiter_function):
+    page_waiter_function.until(expected_conditions.presence_of_element_located(
+                             (By.XPATH, f"//h1[contains(@class, 'card-container') and "
+                                        f"text()='Авторизация по коду']")))
+    address_input = driver_function.find_element(By.ID, value="address")  # Ввод НЕкорректной почты в поле
     address_input.click()
-    driver_module.execute_script("arguments[0].value = '';", address_input)
+    driver_function.execute_script("arguments[0].value = '';", address_input)
     address_input.send_keys('@gmail.com')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
-    login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
+    login_button = driver_function.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
     login_button.click()
     time.sleep(5)
     # Появление ошибки
     try:
-        error_message = page_waiter_module.until(
+        error_message = page_waiter_function.until(
             expected_conditions.presence_of_element_located(
                 (By.XPATH, f"//span[contains(@class, 'rt-input-container__meta--error') "
                            f"and text()='Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, "
@@ -219,24 +221,25 @@ def test_incorrect_authorization_with_code_and_incorrect_email(driver_module, pa
 # Номера телефона и НЕверным значением Кода подтверждения
 
 
-@pytest.mark.parametrize("page_waiter_module", [URL_autorization_with_code], indirect=True)
-def test_incorrect_authorization_with_wrong_code_and_correct_phone(driver_module, page_waiter_module):
-    page_waiter_module.until(expected_conditions.presence_of_element_located
-                             ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
-    phone_input = driver_module.find_element(By.ID, value="address")  # Ввод номера телефона в поле
+@pytest.mark.parametrize("page_waiter_function", [URL_autorization_with_code], indirect=True)
+def test_incorrect_authorization_with_wrong_code_and_correct_phone(driver_function, page_waiter_function):
+    page_waiter_function.until(expected_conditions.presence_of_element_located(
+                             (By.XPATH, f"//h1[contains(@class, 'card-container') "
+                                        f"and text()='Авторизация по коду']")))
+    phone_input = driver_function.find_element(By.ID, value="address")  # Ввод номера телефона в поле
     phone_input.click()
-    driver_module.execute_script("arguments[0].value = '';", phone_input)
+    driver_function.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('+79865451111')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
-    login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
+    login_button = driver_function.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
     login_button.click()
     time.sleep(5)
-    code_input = driver_module.find_element(By.ID, value="rt-code-input")  # Ввод НЕверного Кода подтверждения
+    code_input = driver_function.find_element(By.ID, value="rt-code-input")  # Ввод НЕверного Кода подтверждения
     code_input.click()
     code_input.send_keys('123456')
     # Проверка появления ошибки
     try:
-        error_message = page_waiter_module.until(
+        error_message = page_waiter_function.until(
             expected_conditions.presence_of_element_located(
                 (By.XPATH, f"//span[contains(@class, 'code-input-container__error') "
                            f"and text()='Неверный код. Повторите попытку']")
@@ -246,60 +249,64 @@ def test_incorrect_authorization_with_wrong_code_and_correct_phone(driver_module
         print('Сообщение об ошибке всплыло.')
     except TimeoutException:
         print('\033[31mFAILED: \033[0mСообщение об ошибке НЕ всплыло.')
+    driver_function.refresh()  # Обновление страницы
 
 
 # ТК22 - Получение нового Кода подтверждения с помощью Номера телефона
 
 
-@pytest.mark.parametrize("page_waiter_module", [URL_autorization_with_code], indirect=True)
-def test_authorization_with_resend_code_and_correct_phone(driver_module, page_waiter_module):
-    page_waiter_module.until(expected_conditions.presence_of_element_located
-                             ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
-    phone_input = driver_module.find_element(By.ID, value="address")  # Ввод номера телефона в поле
+@pytest.mark.parametrize("page_waiter_function", [URL_autorization_with_code], indirect=True)
+def test_authorization_with_resend_code_and_correct_phone(driver_function, page_waiter_function):
+    page_waiter_function.until(expected_conditions.presence_of_element_located(
+                             (By.XPATH, f"//h1[contains(@class, 'card-container') "
+                                        f"and text()='Авторизация по коду']")))
+    phone_input = driver_function.find_element(By.ID, value="address")  # Ввод номера телефона в поле
     phone_input.click()
-    driver_module.execute_script("arguments[0].value = '';", phone_input)
+    driver_function.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('+79123123137')
     # time.sleep(15) # Сделать строку активной для заполнения капчи вручную
-    login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
+    login_button = driver_function.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
     login_button.click()
     time.sleep(123)  # Пауза для формирования нового кода
-    element = WebDriverWait(driver_module, 10, ignored_exceptions=[StaleElementReferenceException]).until(
+    element = WebDriverWait(driver_function, 10, ignored_exceptions=[StaleElementReferenceException]).until(
         expected_conditions.presence_of_element_located((By.ID, "otp-resend-code"))
     )
     element.click()  # Элемент стабилен, можно кликнуть
-    code_input = WebDriverWait(driver_module, 10, ignored_exceptions=[StaleElementReferenceException]).until(
+    code_input = WebDriverWait(driver_function, 10, ignored_exceptions=[StaleElementReferenceException]).until(
         expected_conditions.presence_of_element_located((By.ID, "rt-code-input"))
     )
     code_input.click()
     code_input.send_keys('123456')
 
-    otp_code_timeout = page_waiter_module.until(expected_conditions.presence_of_element_located(
+    otp_code_timeout = page_waiter_function.until(expected_conditions.presence_of_element_located(
         (By.ID, 'otp-code-timeout')))
     assert otp_code_timeout.is_displayed()
     print('Код подтверждения отправлен повторно.')
+    driver_function.refresh()  # Обновление страницы
 
 
 # ТК23 - Ошибка при авторизации клиента по Временному коду с помощью Почты и НЕверным значением Кода подтверждения
 
 
-@pytest.mark.parametrize("page_waiter_module", [URL_autorization_with_code], indirect=True)
-def test_incorrect_authorization_with_wrong_code_and_correct_email(driver_module, page_waiter_module):
-    page_waiter_module.until(expected_conditions.presence_of_element_located
-                             ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
-    phone_input = driver_module.find_element(By.ID, value="address")  # Ввод почты в поле
+@pytest.mark.parametrize("page_waiter_function", [URL_autorization_with_code], indirect=True)
+def test_incorrect_authorization_with_wrong_code_and_correct_email(driver_function, page_waiter_function):
+    page_waiter_function.until(expected_conditions.presence_of_element_located(
+                             (By.XPATH, f"//h1[contains(@class, 'card-container') "
+                                        f"and text()='Авторизация по коду']")))
+    phone_input = driver_function.find_element(By.ID, value="address")  # Ввод почты в поле
     phone_input.click()
-    driver_module.execute_script("arguments[0].value = '';", phone_input)
+    driver_function.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('test111@gmail.com')
 #   time.sleep(15) # Сделать строку активной для заполнения капчи вручную
-    login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
+    login_button = driver_function.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
     login_button.click()
     time.sleep(5)
-    code_input = driver_module.find_element(By.ID, value="rt-code-input")  # Ввод Неверного Кода подтверждения в поле
+    code_input = driver_function.find_element(By.ID, value="rt-code-input")  # Ввод Неверного Кода подтверждения в поле
     code_input.click()
     code_input.send_keys('123456')
     # Проверка появления ошибки
     try:
-        error_message = page_waiter_module.until(
+        error_message = page_waiter_function.until(
             expected_conditions.presence_of_element_located(
                 (By.XPATH, f"//span[contains(@class, 'code-input-container__error') "
                            f"and text()='Неверный код. Повторите попытку']")
@@ -309,37 +316,40 @@ def test_incorrect_authorization_with_wrong_code_and_correct_email(driver_module
         print('Сообщение об ошибке всплыло.')
     except TimeoutException:
         print('\033[31mFAILED: \033[0mСообщение об ошибке НЕ всплыло.')
+    driver_function.refresh()  # Обновление страницы
 
 
 # ТК24 - Получение нового Кода подтверждения с помощью Почты
 
 
-@pytest.mark.parametrize("page_waiter_module", [URL_autorization_with_code], indirect=True)
-def test_authorization_with_resend_code_and_correct_email(driver_module, page_waiter_module):
-    page_waiter_module.until(expected_conditions.presence_of_element_located
-                             ((By.XPATH, f"//h1[contains(@class, 'card-container') and text()='Авторизация по коду']")))
-    phone_input = driver_module.find_element(By.ID, value="address")  # Ввод почты в поле
+@pytest.mark.parametrize("page_waiter_function", [URL_autorization_with_code], indirect=True)
+def test_authorization_with_resend_code_and_correct_email(driver_function, page_waiter_function):
+    page_waiter_function.until(expected_conditions.presence_of_element_located(
+                             (By.XPATH, f"//h1[contains(@class, 'card-container') "
+                                        f"and text()='Авторизация по коду']")))
+    phone_input = driver_function.find_element(By.ID, value="address")  # Ввод почты в поле
     phone_input.click()
-    driver_module.execute_script("arguments[0].value = '';", phone_input)
+    driver_function.execute_script("arguments[0].value = '';", phone_input)
     phone_input.send_keys('testovy@gmail.com')
     time.sleep(15)  # Сделать строку активной для заполнения капчи вручную
-    login_button = driver_module.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
+    login_button = driver_function.find_element(By.ID, "otp_get_code")  # Нажатие кнопки Получить код
     login_button.click()
     time.sleep(123)
-    element = WebDriverWait(driver_module, 10, ignored_exceptions=[StaleElementReferenceException]).until(
+    element = WebDriverWait(driver_function, 10, ignored_exceptions=[StaleElementReferenceException]).until(
         expected_conditions.presence_of_element_located((By.ID, "otp-resend-code"))
     )
     element.click()  # Элемент стабилен, можно кликнуть
-    code_input = WebDriverWait(driver_module, 10, ignored_exceptions=[StaleElementReferenceException]).until(
+    code_input = WebDriverWait(driver_function, 10, ignored_exceptions=[StaleElementReferenceException]).until(
         expected_conditions.presence_of_element_located((By.ID, "rt-code-input"))
     )
     code_input.click()
     code_input.send_keys('123456')
 
-    otp_code_timeout = page_waiter_module.until(expected_conditions.presence_of_element_located(
+    otp_code_timeout = page_waiter_function.until(expected_conditions.presence_of_element_located(
         (By.ID, 'otp-code-timeout')))
     assert otp_code_timeout.is_displayed()
     print('Код подтверждения отправлен повторно.')
+    driver_function.refresh()  # Обновление страницы
 
 
 # ТК25 - Авторизация СУЩЕСТВУЮЩЕГО клиента по Временному коду с помощью Номера телефона
