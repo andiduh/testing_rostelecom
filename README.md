@@ -95,7 +95,7 @@ pytest --driver-path '~/path/to/chromedriver'
 - ![Selenium](https://img.shields.io/badge/selenium-4.25.0-blue)
 
 ## Описание тестов:
-# autorization_with_password_test.py
+### autorization_with_password_test.py
 1. - test_tab_displayed_autorization_with_password: проверка наличия элементов на странице авторизации с паролем.
    - test_input_and_tab_switching_autorization_with_password: проверка автоматической активации таба при вводе соответствующего значения в поле username (невозможно проверить смену таба на Лицевой счет, так как отсутствуют требования к данному полю).
    - test_active_tab_autorization_with_password: проверка того, что таб Номер является активным по умолчанию (проверка происходит через таб Телефон).
