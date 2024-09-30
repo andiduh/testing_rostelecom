@@ -53,41 +53,35 @@ pip install -r requirements.txt
 ```
 
 ## Запуск тестов с активированным виртуальным окружением
-Поскольку тесты запускаются c использованием библиотеки selenium, то необходимо скачать и разархивировать в отдельную папку сhromedriver:
+Поскольку тесты запускаются c использованием библиотеки selenium и Chrome Driver, то необходимо скачать и установить браузер [chrome](https://www.google.com/intl/ru_ru/chrome/).
+
+Затем активировать виртуальное окружение в Windows:
+```bash
+venv/Scripts/activate.ps1
+```
+или в Linux:
+Активация виртуального окружения (Linux):
+```bash
+source venv/bin/activate
+```
+
+Затем запустите pytest:
+```bash
+pytest -v -s
+```
+
+## Если chrome не установлен и вы не планируете его устанавливать, есть алтернативный путь:
+Скачать и разархивировать в отдельную папку сhromedriver:
 - [Windows (64 bit)](https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win64/chromedriver-win64.zip)
 - [Windows (32 bit)](https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.70/win32/chromedriver-win32.zip)
 
 ![image](https://github.com/user-attachments/assets/1ffc6d06-6a99-4a5a-b013-88524f447d2f)
 
-Далее с активированным виртуальным окружением нужно запустить pytest с указанием пути до этого драйвера:
-
-Активация виртуального окружения (Windows):
-```bash
-venv/Scripts/activate.ps1
-```
-
-Активация виртуального окружения (Linux):
-```bash
-venv/Scripts/activate.ps1
-```
-
-Запуск pytest:
-```bash
-pytest
-```
-
-Папка с драйвером по умолчанию в windows: `C:\chromedriver-win64\chromedriver.exe`, в linux `~/chromedriver`. Если будет другая, то pytest нужно запустить с указанием пути до `chromedriver.exe`.
-
+Далее с активированным виртуальным окружением нужно запустить pytest с указанием пути до этого драйвера (важно что бы в пути до chrome driver не было кириллицы), например:
 Windows
 ```bash
 pytest --driver-path 'C:\path\to\chrome\driver\chromedriver.exe'
 ```
-
-Linux
-```bash
-pytest --driver-path '~/path/to/chromedriver'
-```
-
 ## Технологии
 
 - ![Python](https://img.shields.io/badge/python-3.12.4-purple)
